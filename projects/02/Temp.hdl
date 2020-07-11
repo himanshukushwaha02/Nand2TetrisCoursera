@@ -1,0 +1,11 @@
+CHIP Temp{
+    IN  
+        x[16],  // 16-bit inputs        
+        zx; // zero the x input?
+    OUT 
+        out[16]; // 16-bit output
+    
+    PARTS:
+   // Put you code here:
+   Not16(in=x,out=out);
+}
